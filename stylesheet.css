@@ -77,6 +77,22 @@ hr {
     padding: 1em 1em 2em;
 }
 
+.tags, .tags2 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.tags p, .tags2 p {
+    margin-inline: 0.2em;
+    padding: 0.25em 0.5em;
+    border: 0.1em solid beige;
+    border-radius: 3em;
+    background-color: beige;
+    color: grey;
+    font-style: italic;
+}
+
 /* slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
 
 .slider {
