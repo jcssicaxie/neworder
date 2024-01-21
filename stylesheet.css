@@ -1,14 +1,7 @@
-/* simpel */
+/* basics */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-
-header {
-    text-align: center;
-    margin: 0;
-    padding-top: 1em;
-    background-color: white;
 }
 
 main {
@@ -32,7 +25,17 @@ p {
     margin: 0;
 }
 
+hr {
+    margin: 0;
+}
+
 /* header */
+header {
+    text-align: center;
+    margin: 0;
+    padding-top: 1em;
+    background-color: white;
+}
 
 .logo {
     width: 6em;
@@ -58,10 +61,6 @@ nav a {
     border: 0.1em solid black;
     border-radius: 3em;
     color: black;
-}
-
-hr {
-    margin: 0;
 }
 
 /* home */
