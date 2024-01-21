@@ -116,7 +116,7 @@ hr {
     display: flex;
     column-gap: 1em;
     position: absolute;
-    bottom: -2em;
+    bottom: -7.5em;
     transform: translateX(290%);
 }
 
