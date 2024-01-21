@@ -146,20 +146,25 @@ nav a {
 .buttonstores a {
     padding: 0.25em 0.5em;
     border: 0.1em solid black;
+    background-color: black;
     border-radius: 3em;
-    color: black;
+    color: white;
 }
 
 /* about */
 
 .abouttext {
-    padding: 0 2em;
+    padding: 0 3em;
+}
+
+.abouttext p {
+    padding-bottom: 1em;
 }
 
 .logo2 {
     width: 5em;
     height: auto;
-    padding: 3em 5em;
+    padding: 1em 3em 5em;
 }
 
 footer {
