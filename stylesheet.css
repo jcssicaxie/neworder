@@ -1,11 +1,14 @@
+/* simpel */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 header {
     text-align: center;
     margin: 0;
     padding-top: 1em;
+    background-color: white;
 }
 
 main {
@@ -25,7 +28,13 @@ h3 {
     text-size-adjust: none;
 }
 
-#logo {
+p {
+    margin: 0;
+}
+
+/* header */
+
+.logo {
     width: 6em;
     height: auto;
     padding: 0.25em 0em;
@@ -55,19 +64,90 @@ hr {
     margin: 0;
 }
 
+/* home */
+.mainhome p {
+    padding: 1em;
+}
 
+.mainhome img {
+    border-radius: 0;
+}
+
+.mainhome .buttonstores {
+    padding: 1em 1em 2em;
+}
+
+/* slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    max-width: 22em;
+    margin: 0 auto;
+    border-radius: 2em;
+}
+
+.slider img {
+    flex: auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1em;
+    position: absolute;
+    bottom: -2em;
+    transform: translateX(290%);
+}
+
+.slider-nav a {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity 250ms ease;
+}
+
+/* stores */
+
+.mainstores img {
+    height: 10em;
+    object-fit: cover;
+    object-position: 20% 50%;
+}
+
+.flexcheck {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 2em;
+    align-items: center;
+}
+
+.buttonstores a {
+    padding: 0.25em 0.5em;
+    border: 0.1em solid black;
+    border-radius: 3em;
+    color: black;
+}
+
+/* about */
 
 .abouttext {
     padding: 0 2em;
 }
 
 .logo2 {
-    width: 10em;
+    width: 5em;
     height: auto;
-    padding: 1em;
+    padding: 3em 5em;
 }
 
 footer {
     font-size: small;
-    padding: 0.5em;
+    padding: 1em;
 }
