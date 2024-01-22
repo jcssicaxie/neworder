@@ -156,8 +156,27 @@ nav a {
     border-radius: 0;
 }
 
+.avcmain p {
+    padding: 1em;
+    text-align: left;
+}
+
+.avcflex {
+    display: flex;
+}
+
+.avcflex img {
+    width: 11.75em;
+}
+
 .storesback {
     position: relative;
+}
+
+.storesback img {
+    width: 23.5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
 }
 
 .storesback a {
