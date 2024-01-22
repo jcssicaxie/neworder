@@ -143,12 +143,29 @@ nav a {
     align-items: center;
 }
 
-.buttonstores a {
+.buttonstores a, .storesback a {
     padding: 0.25em 0.5em;
     border: 0.1em solid black;
     background-color: black;
     border-radius: 3em;
     color: white;
+}
+
+/* avc */
+.avcmain img {
+    border-radius: 0;
+}
+
+.storesback {
+    position: relative;
+}
+
+.storesback a {
+    position: fixed;
+    top: 7%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* about */
