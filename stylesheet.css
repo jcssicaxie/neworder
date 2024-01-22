@@ -93,7 +93,6 @@ nav a {
 }
 
 /* slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
-
 .slider {
     display: flex;
     overflow-x: auto;
@@ -129,7 +128,6 @@ nav a {
 }
 
 /* stores */
-
 .mainstores img {
     height: 10em;
     object-fit: cover;
@@ -156,7 +154,7 @@ nav a {
     border-radius: 0;
 }
 
-.avcmain p, .nhomain p {
+.avcmain p, .nhomain p, .fashmain p {
     padding: 1em;
     text-align: left;
 }
@@ -190,7 +188,6 @@ nav a {
 /* nhogirl */
 
 /* about */
-
 .abouttext {
     padding: 0 3em;
 }
