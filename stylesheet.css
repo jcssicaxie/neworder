@@ -1,6 +1,6 @@
 /* basics */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     margin: 0;
 }
 
@@ -9,9 +9,8 @@ main {
 }
 
 main img {
-    width: 22em;
+    width: 20em;
     height: auto;
-    border-radius: 2em;
 }
 
 h3 {
@@ -23,73 +22,29 @@ h3 {
 
 p {
     margin: 0;
-}
-
-hr {
-    margin: 0;
+    line-height: 1.5em;
 }
 
 /* header */
 header {
     text-align: center;
     margin: 0;
-    padding-top: 1em;
-    background-color: white;
+    padding-top: 2em;
 }
 
 .logo {
-    width: 6em;
+    width: 5em;
     height: auto;
-    padding: 0.25em 0em;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 2em 1em;
-    margin: 0;
-}
-
-nav ul li {
-    padding: 0 1em;
-    color: black;
-}
-
-nav a {
-    padding: 0.25em 0.5em;
-    border: 0.1em solid black;
-    border-radius: 3em;
-    color: black;
+    padding: 0.5em 3em;
 }
 
 /* home */
 .mainhome p {
-    padding: 1em;
+    padding: 3em;
 }
 
 .mainhome img {
     border-radius: 0;
-}
-
-.mainhome .buttonstores {
-    padding: 1em 1em 2em;
-}
-
-.tags, .tags2 {
-    display: flex;
-    justify-content: center;
-    margin: 1em;
-}
-
-.tags p, .tags2 p {
-    margin-inline: 0.2em;
-    padding: 0.25em 0.5em;
-    border: 0.1em solid beige;
-    border-radius: 3em;
-    background-color: beige;
-    color: grey;
-    font-style: italic;
 }
 
 /* slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
@@ -99,9 +54,8 @@ nav a {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     position: relative;
-    max-width: 22em;
+    max-width: 20em;
     margin: 0 auto;
-    border-radius: 2em;
 }
 
 .slider img {
@@ -114,7 +68,7 @@ nav a {
     display: flex;
     column-gap: 1em;
     position: absolute;
-    bottom: -7.5em;
+    bottom: -9em;
     transform: translateX(290%);
 }
 
@@ -123,30 +77,31 @@ nav a {
     height: 0.5em;
     border-radius: 50%;
     background-color: white;
-    opacity: 0.75;
-    transition: opacity 250ms ease;
+    transition: 250ms ease;
 }
 
 /* stores */
 .mainstores img {
+    width: 20em;
     height: 10em;
     object-fit: cover;
     object-position: 20% 50%;
 }
 
-.flexcheck {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 1em 2em;
+.mainstores h2 {
+    padding: 1em 0 2em;
     align-items: center;
+    margin: 0;
 }
 
-.buttonstores a, .storesback a {
-    padding: 0.25em 0.5em;
-    border: 0.1em solid black;
-    background-color: black;
-    border-radius: 3em;
-    color: white;
+.storesback a {
+    text-decoration: none;
+}
+
+.storesback a img {
+    width: 3em;
+    justify-content: center;
+    padding-top: 2em;
 }
 
 /* avc */
@@ -155,16 +110,8 @@ nav a {
 }
 
 .avcmain p, .nhomain p, .fashmain p {
-    padding: 1em;
+    padding: 2em;
     text-align: left;
-}
-
-.avcflex {
-    display: flex;
-}
-
-.avcflex img {
-    width: 11.75em;
 }
 
 .storesback {
@@ -173,19 +120,15 @@ nav a {
 
 .storesback img {
     width: 23.5em;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
 }
 
 .storesback a {
     position: fixed;
     top: 7%;
-    left: 85%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-decoration: none;
 }
-
-/* nhogirl */
 
 /* about */
 .abouttext {
@@ -196,13 +139,68 @@ nav a {
     padding-bottom: 1em;
 }
 
-.logo2 {
+.logotext {
     width: 5em;
     height: auto;
-    padding: 1em 3em 5em;
+    padding: 2em 9em 0;
 }
 
+.titel {
+    padding: 2em 0 1em;
+}
+
+.titel2, .titelabout {
+    width: 19em;
+    padding: 2em 0 1em;
+}
+
+.titelabout {
+    padding-bottom: 2em;
+}
+
+/* footer */
 footer {
-    font-size: small;
-    padding: 1em;
+    height: 5em;
+}
+
+footer p {
+    height: auto;
+    padding: 2em;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1em 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0 1em;
+}
+
+nav a {
+    padding: 0.25em 0.5em;
+    color: black;
+    text-decoration: none;
+} 
+
+nav img {
+    width: 3em;
+}
+
+iframe {
+    width: 20em;
+    height: 10em;
+    padding: 2em 0;
 }
